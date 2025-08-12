@@ -12,7 +12,7 @@ const Welcome = () => {
     const isLast = activeDot === onboarding.length - 1;
 
     return (
-        <SafeAreaView className="flex- h-full items-center justify-between bg-white">
+        <SafeAreaView className="flex- h-full items-center justify-between bg-white px-5">
             <TouchableOpacity
                 onPress={() => router.replace("/(auth)/sign-up")}
                 className="w-full flex justify-end items-end p-5"
@@ -60,7 +60,7 @@ const Welcome = () => {
                         ? router.replace("/(auth)/sign-up")
                         : swiperRef.current?.scrollBy(1)
                 }
-                className="w-11/12 mt-10"
+                className="w-11/12 my-10"
             />
         </SafeAreaView>
     );
